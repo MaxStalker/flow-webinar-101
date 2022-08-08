@@ -1,0 +1,32 @@
+{
+	"emulators": {
+		"default": {
+			"port": 3569,
+			"serviceAccount": "emulator-account"
+		}
+	},
+	"contracts": {
+		"YearbookMinter": {
+			"source": "./cadence/contracts/YearbookMinter.cdc",
+			"aliases": {
+				"testnet": "5593df7d286bcdb8"
+			}
+		}
+	},
+	"networks": {
+		"emulator": "127.0.0.1:3569",
+		"mainnet": "access.mainnet.nodes.onflow.org:9000",
+		"testnet": "access.devnet.nodes.onflow.org:9000"
+	},
+	"accounts": {
+		"emulator-account": {
+			"address": "f8d6e0586b0a20c7",
+			"key": "5de24eb3497b78236c96a251bfde653d8fdf254ddb2cc9ea6661def9541c60ac"
+		}
+	},
+	"deployments": {
+		"testnet":{
+			"first": ["YearbookMinter"]
+		}
+	}
+}
