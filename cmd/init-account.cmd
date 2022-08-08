@@ -1,0 +1,1 @@
+flow transactions send ./cadence/transactions/init-account.cdc --network=testnet --signer=first
