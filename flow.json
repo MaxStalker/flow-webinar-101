@@ -11,6 +11,16 @@
 			"aliases": {
 				"testnet": "5593df7d286bcdb8"
 			}
+		},
+		"FungibleToken": {
+			"aliases": {
+				"testnet": "9a0766d93b6608b7"
+			}
+		},
+		"FlowToken": {
+			"aliases": {
+				"testnet": "7e60df042a9c0868"
+			}
 		}
 	},
 	"networks": {
