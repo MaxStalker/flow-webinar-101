@@ -1,0 +1,1 @@
+- [ ] Write tests to check mutability of `allowedMessages` 
