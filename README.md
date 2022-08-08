@@ -1,68 +1,16 @@
-# Repository template
-A template enabled repository, including all necesary files to open source
+# Flow 101 - Start Building Now
+Materials in this repository accompany Flow 101 webinar, showcasing basic interaction with network using available tools:
+- [Flow Playground](https://play.onflow.org/)
+- [Flow CLI](https://docs.onflow.org/flow-cli/)
 
-(create an issue with the following content if you want to track the repo configuration)
-## Repository settings and configuration
-- [ ]  Repository info
-    - [ ]  Add repo description
-    - [ ]  Update website to https://onflow.org
-    - [ ]  Add relevant repository topics (i.e. `blockchain` `onflow`, etc)
-- [ ]  Define merge workflow
-    - [ ]  `main` branch rule:
-        - [ ]  **Require pull request reviews before merging (1 approving review)**
-            - [ ]  **Require review from Code Owners**
-        - [ ]  **Require status checks to pass before merging**
-            - [ ]  **Require branches to be up to date before merging**
-        - [ ]  **Require linear history**
-        - [ ]   **Restrict who can push to matching branches**
-            - [ ]  Choose `onflow/flow` team
+### Cadence
+`cadence` folder contains all the Cadence code necessary for project to work properly.
+- `contracts` - single file have the code for the `YearbookManager` contract with all the annotations necessary to understand the code
+- `transactions` - holds transactions necessary to init account and sign yearbook on other account
+- `scripts` - scripts, which can be used to read messages from a specific account Yearbook
 
-- [ ]  Add necessary team members, adjust access levels
-    - [ ]  `onflow/flow-admin` ⇒ Admin access
-    - [ ]  `onflow/flow` ⇒ Write access
+### CLI
+We also prepared two folders with `shell` and `batch` scripts, which will allow you to easily run Flow CLI commands.
 
-- Add issue tags
-    - [ ] Architecture
-    - [ ] Backend
-    - [ ] Breaking Change
-    - [ ] Dev Portal Documentation
-    - [ ] Epic
-    - [ ] Feature
-    - [ ] Feedback
-    - [ ] Frontend
-    - [ ] improvement
-    - [ ] integration testing
-    - [ ] Metadata View
-    - [ ] MoSCoW - Must
-    - [ ] MoSCoW - Should
-    - [ ] MoSCoW - Could
-    - [ ] MoSCoW - Would
-    - [ ] Needs Definition
-    - [ ] Needs Estimation
-    - [ ] Needs Test Cases
-    - [ ] P-High
-    - [ ] P-Low
-    - [ ] P-Medium
-    - [ ] question
-    - [ ] S-Access
-    - [ ] S-Client
-    - [ ] S-Collection
-    - [ ] S-Common
-    - [ ] S-Consensus
-    - [ ] S-Cryptography
-    - [ ] S-Emulator
-    - [ ] S-Execution
-    - [ ] S-FCL
-    - [ ] S-Go SDK
-    - [ ] S-Infrastructure
-    - [ ] S-JS-SDK
-    - [ ] S-Language
-    - [ ] S-Network Layer
-    - [ ] S-Playground
-    - [ ] S-PostExecution
-    - [ ] S-Semantics
-    - [ ] S-Verification
-    - [ ] T-Bug
-    - [ ] T-Documentation 📃
-    - [ ] T-Meta
-    - [ ] Technical Debt
+### Testing
+`test` folder contains example on how you would approach testing Cadence code with [Flow JS Testing](https://github.com/onflow/flow-js-testing)
