@@ -1,0 +1,15 @@
+{
+	"contracts": {},
+	"networks": {
+		"emulator": "127.0.0.1:3569",
+		"mainnet": "access.mainnet.nodes.onflow.org:9000",
+		"testnet": "access.devnet.nodes.onflow.org:9000"
+	},
+	"accounts": {
+		"emulator-account": {
+			"address": "f8d6e0586b0a20c7",
+			"key": "aee3141f97fcf0a9ffee63b9f606545949f046201715f51973bc8f4bb5b198a3"
+		}
+	},
+	"deployments": {}
+}
