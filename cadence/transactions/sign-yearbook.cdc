@@ -1,6 +1,6 @@
 import YearbookMinter from "../contracts/YearbookMinter.cdc"
 
-transaction(yearbookOwner: Address, message: String){
+transaction(yearbookOwner: Address, messageKey: String){
     prepare(signer: AuthAccount){
         let signerRef = signer
             .getCapability(/public/Yearbook)
@@ -12,6 +12,6 @@ transaction(yearbookOwner: Address, message: String){
             .borrow<&YearbookMinter.Yearbook>()
             ?? panic("Your account does not have Yearbook in it's storage")
 
-        recieverRef.leaveMessage(message: message, capability: signerRef)
+        recieverRef.leaveMessage(messageKey: messageKey, capability: signerRef)
     }
 }

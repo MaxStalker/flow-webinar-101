@@ -1,9 +1,10 @@
-import FungibleToken from "./standard/FungibleToken.cdc"
-import FlowToken from "./standard/FlowToken.cdc"
 /*
 * YearbookMinter is a public contract, which shocases resource-oriented nature
 * of Cadence programm language. 
 */
+
+import FungibleToken from "./standard/FungibleToken.cdc"
+import FlowToken from "./standard/FlowToken.cdc"
 
 
 /*
@@ -89,7 +90,7 @@ pub contract YearbookMinter{
         let book <- create Yearbook()
         
         // Emit event that new yearbook is created
-        emit YearbookCreated(owner: )
+        emit YearbookCreated(owner: owner )
         
         // Lastly, we will return resource to whoever called this function
         return <- book
